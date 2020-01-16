@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "614920720829",
+    "firebase_url": "https://dzienniktreningowyengproj.firebaseio.com",
+    "project_id": "dzienniktreningowyengproj",
+    "storage_bucket": "dzienniktreningowyengproj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614920720829:android:402265adea46ca572c02d4",
+        "android_client_info": {
+          "package_name": "com.example.engineerproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614920720829-hpstfcgm5335bockru2bgfentrcu1e1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.engineerproject",
+            "certificate_hash": "61ce765525bc184cddc056b5aaec32b7a8c76ae2"
+          }
+        },
+        {
+          "client_id": "614920720829-fbie0gl92ticg7ug4ga6ha6ad58gguuc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSiGauhdBSAAuHuhU_1zpiCk4BmCM1ero"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614920720829-fbie0gl92ticg7ug4ga6ha6ad58gguuc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

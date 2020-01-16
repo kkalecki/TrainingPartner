@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EngineerProject</string>
+    <string name="logowanie">Logowanie!</string>
+    <string name="email">Email</string>
+    <string name="podaj_email">Podaj Email</string>
+    <string name="podaj_has_o">Podaj hasło</string>
+    <string name="zaloguj_sie">Logowanie</string>
+    <string name="rejestracja">Rejestracja</string>
+</resources>

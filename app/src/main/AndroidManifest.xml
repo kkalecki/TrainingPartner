@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.engineerproject">
+
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+
+        >
+        <activity android:name=".draw_diagram_activity" android:launchMode="singleTop"></activity>
+        <activity android:name=".pre_results_activity" android:launchMode="singleTop"/>
+        <activity android:name=".start_training_activity" android:launchMode="singleTop"/>
+        <activity android:name=".amount_of_series_activity" android:launchMode="singleTop"/>
+        <activity android:name=".show_onebody_exercise" android:launchMode="singleTop"/>
+        <activity android:name=".exercises_activity" android:launchMode="singleTop"/>
+        <activity android:name=".add_training_activity" android:launchMode="singleTop"/>
+        <activity android:name=".show_training_activity" android:launchMode="singleTop"/>
+        <activity android:name=".results_activity" android:launchMode="singleTop"/>
+        <activity android:name=".my_trainings_activity" android:launchMode="singleTop"/>
+        <activity android:name=".all_trainings_activity" android:launchMode="singleTop"/>
+        <activity android:name=".profile_activity" android:launchMode="singleTop"/>
+        <activity android:name=".register_activity" android:launchMode="singleTop"/>
+        <activity android:name=".login_activity" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

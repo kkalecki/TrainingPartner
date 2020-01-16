@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".show_onebody_exercise">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fabmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:elevation="-2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu_colorNormal="@color/float_background"
+        app:menu_colorPressed="@color/background"
+        app:menu_colorRipple="@color/background"
+        app:menu_fab_label=""
+        app:menu_icon="@drawable/main_item"
+        app:menu_labels_colorNormal="@color/float_background"
+        app:menu_labels_textColor="@color/background"
+        app:menu_openDirection="up"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="100000dp"
+            android:onClick="main_activity"
+            android:src="@drawable/item1"
+            app:fab_colorNormal="@color/float_background"
+            app:fab_colorPressed="@color/float_background"
+            app:fab_label="Strona główna"
+            app:fab_size="mini"
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="all_trainings_button"
+            android:src="@drawable/item2"
+            app:fab_colorNormal="@color/float_background"
+            app:fab_colorPressed="@color/float_background"
+            app:fab_label="Dostępne treningi"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="my_trainings_button"
+            android:src="@drawable/item3"
+            app:fab_colorNormal="@color/float_background"
+            app:fab_colorPressed="@color/float_background"
+            app:fab_label="Moje treningi"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="results_button"
+            android:src="@drawable/item4"
+            app:fab_colorNormal="@color/float_background"
+            app:fab_colorPressed="@color/float_background"
+            app:fab_label="Wyniki"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="own_training"
+            android:src="@drawable/item5"
+            app:fab_colorNormal="@color/float_background"
+            app:fab_colorPressed="@color/float_background"
+            app:fab_label="Stwórz trening"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="logout"
+            android:src="@drawable/item6"
+            app:fab_colorNormal="@color/float_background"
+            app:fab_colorPressed="@color/float_background"
+            app:fab_label="Logout"
+            app:fab_size="mini" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="602dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

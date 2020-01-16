@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_layout2"
+    android:background="@color/background"
+    android:layout_marginBottom="20dp">
+    <TextView
+        android:id="@+id/tv0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nazwa cwiczenia"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginLeft="10sp"/>
+
+    <TextView
+        android:layout_marginLeft="10sp"
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ktora seria"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_below="@+id/tv0"
+        />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_marginLeft="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ilosc powtorzen"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_below="@+id/tv1"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_marginLeft="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ciezar"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_toRightOf="@id/tv2"
+        android:layout_toEndOf="@id/tv2"
+        android:layout_below="@+id/tv1"/>
+
+</RelativeLayout>

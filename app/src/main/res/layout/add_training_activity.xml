@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_training_activity"
+    android:background="#009688">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/silacz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/check"
+        android:layout_width="66dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        app:layout_constraintEnd_toStartOf="@+id/image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        android:hint="Podaj nazwę treningu"
+
+        android:textColorHint="#fff"/>
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button"
+        android:onClick="add_exercise"
+        android:text="Dodaj ćwiczenia"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/custom_button"
+        android:onClick="save_training"
+        android:text="Zapisz Trening"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et1" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fabmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu_openDirection="up"
+        app:menu_fab_label=""
+        app:menu_showShadow="true"
+        app:menu_colorNormal="@color/float_background"
+        app:menu_colorPressed="@color/background"
+        app:menu_colorRipple="@color/background"
+        app:menu_labels_textColor="@color/background"
+        app:menu_labels_colorNormal="@color/float_background"
+        app:menu_icon="@drawable/main_item"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Strona główna"
+            app:fab_size="mini"
+            android:src="@drawable/item1"
+            android:elevation="100000dp"
+            app:fab_colorNormal="@color/float_background"
+            app:fab_colorPressed="@color/float_background"
+            android:onClick="main_activity"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Dostępne treningi"
+            app:fab_size="mini"
+            android:src="@drawable/item2"
+            app:fab_colorNormal="@color/float_background"
+            app:fab_colorPressed="@color/float_background"
+            android:onClick="all_trainings_button"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Moje treningi"
+            app:fab_size="mini"
+            android:src="@drawable/item3"
+            app:fab_colorNormal="@color/float_background"
+            app:fab_colorPressed="@color/float_background"
+            android:onClick="my_trainings_button"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Wyniki"
+            app:fab_size="mini"
+            android:src="@drawable/item4"
+            app:fab_colorNormal="@color/float_background"
+            app:fab_colorPressed="@color/float_background"
+            android:onClick="results_button"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Stwórz trening"
+            app:fab_size="mini"
+            android:src="@drawable/item5"
+            app:fab_colorNormal="@color/float_background"
+            app:fab_colorPressed="@color/float_background"
+            android:onClick="own_training"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Logout"
+            app:fab_size="mini"
+            android:src="@drawable/item6"
+            app:fab_colorNormal="@color/float_background"
+            app:fab_colorPressed="@color/float_background"
+            android:onClick="logout"
+            />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+</androidx.constraintlayout.widget.ConstraintLayout>
